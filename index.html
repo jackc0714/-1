@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="公司官網與 AI 客服" />
+  <title>公司官網 + AI 客服</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>🚀 公司名稱</h1>
+    <p>現代化公司形象網站 × AI 客服</p>
+  </header>
+
+  <main class="container">
+    <section class="hero glass">
+      <h2>我們的服務</h2>
+      <p>提供優質的產品與服務，以客戶滿意度為首要目標。我們的團隊致力於創新與卓越。</p>
+    </section>
+
+    <section class="contact glass">
+      <h3>📧 聯絡我們</h3>
+      <form id="contactForm">
+        <input name="name" type="text" placeholder="姓名" required />
+        <input name="email" type="email" placeholder="電子郵件" required />
+        <textarea name="message" placeholder="訊息內容" required></textarea>
+        <button type="submit">送出</button>
+      </form>
+      <div id="contactResult"></div>
+    </section>
+
+    <section class="chat glass">
+      <h3>💬 AI 客服</h3>
+      <div id="chatWindow"></div>
+      <form id="chatForm">
+        <input id="chatInput" type="text" placeholder="輸入訊息..." autocomplete="off" />
+        <button type="submit">送出</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
